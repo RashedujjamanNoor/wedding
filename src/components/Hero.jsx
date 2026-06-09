@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const videoId = "zotshy8YzHE";
@@ -9,16 +10,15 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <iframe
           className="
-            absolute
-            top-1/2 left-1/2
-            w-[177.77vh]
-            h-[100vh]
-            min-w-full
-            min-h-full
-            -translate-x-1/2
-            -translate-y-1/2
-            pointer-events-none
-          "
+    absolute top-1/2 left-1/2
+    w-[100vw]
+    h-[56.25vw]
+    min-h-[100vh]
+    min-w-[177.77vh]
+    -translate-x-1/2
+    -translate-y-1/2
+    pointer-events-none
+  "
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&rel=0&playsinline=1`}
           frameBorder="0"
           allow="autoplay; fullscreen"
@@ -97,7 +97,7 @@ export default function Hero() {
               text-sm md:text-base
             "
             >
-              <a href="/portfolio">View Portfolio</a>
+              <Link to="/portfolio">Portfolio</Link>
             </button>
 
             <button
@@ -108,7 +108,7 @@ export default function Hero() {
               text-sm md:text-base
             "
             >
-              <a href="/booking">Book Consultation</a>
+              <Link to="/booking">Book Consultation</Link>
             </button>
           </motion.div>
         </div>
