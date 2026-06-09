@@ -97,7 +97,7 @@ export default function Hero() {
               text-sm md:text-base
             "
             >
-              View Portfolio
+              <a href="/portfolio">View Portfolio</a>
             </button>
 
             <button
@@ -108,7 +108,7 @@ export default function Hero() {
               text-sm md:text-base
             "
             >
-              Book Consultation
+              <a href="/booking">Book Consultation</a>
             </button>
           </motion.div>
         </div>
