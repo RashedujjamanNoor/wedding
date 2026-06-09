@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function CTA() {
   return (
     <section className="py-32 px-6 text-center">
@@ -16,7 +18,7 @@ export default function CTA() {
         </p>
 
         <button className="bg-[#C8A96B] text-black px-10 py-5 hover:scale-105 transition">
-          <a href="/booking">Book Your Date</a>
+          <Link to="/booking">Book Your Date</Link>
         </button>
       </div>
     </section>

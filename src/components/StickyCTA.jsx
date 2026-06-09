@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function StickyCTA() {
   const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ export default function StickyCTA() {
           href="/contact"
           className="bg-[#C8A96B] text-black px-6 py-3 font-semibold hover:scale-105 transition"
         >
-          <a href="/booking">Check Availability</a>
+          <Link to="/booking">Check Availability</Link>
         </a>
       </div>
     </div>

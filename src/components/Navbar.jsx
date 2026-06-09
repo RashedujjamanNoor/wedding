@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -65,7 +65,7 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden md:block">
               <button className="border border-[#C8A96B] px-5 py-2 text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black transition duration-300">
-                <a href="/booking">Book Your Date</a>
+                <Link to="/booking">Book Your Date</Link>
               </button>
             </div>
 
